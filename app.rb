@@ -6,7 +6,7 @@ class Application < Sinatra::Base
   end
   
   post '/greet' do 
-    binding.pry
+    # binding.pry
    erb :greet
   end
 end
