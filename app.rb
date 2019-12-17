@@ -2,7 +2,7 @@ require_relative 'config/environment'
 class Application < Sinatra::Base
   
   get '/' do 
-    erb:index
+    erb :index
   end
   
   post '/greet' do 
@@ -10,7 +10,7 @@ class Application < Sinatra::Base
   end
   
   get '/greet' do
-    binding.pry
+    erb :greeting
   end
 
 end
