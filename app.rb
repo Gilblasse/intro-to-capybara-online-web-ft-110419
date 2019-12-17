@@ -6,13 +6,6 @@ class Application < Sinatra::Base
   end
   
   post '/greet' do 
-    @info = params
-    redirect '/greet'
+   erb :greet
   end
-  
-  get '/greet' do
-    # @info = params
-    erb :greet
-  end
-
 end
