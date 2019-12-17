@@ -5,8 +5,12 @@ class Application < Sinatra::Base
     erb :index
   end
   
+  get '/greet' do 
+     erb :greet
+  end
+  
   post '/greet' do 
-    # binding.pry
-   erb :greet
+    @info = params
+    redirect '/greet'
   end
 end
