@@ -10,6 +10,7 @@ class Application < Sinatra::Base
   end
   
   get '/greet' do
+    @info = params
     erb :greet
   end
 
