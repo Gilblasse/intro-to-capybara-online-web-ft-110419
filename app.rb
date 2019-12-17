@@ -10,7 +10,6 @@ class Application < Sinatra::Base
   end
   
   post '/greet' do 
-    @info = params
-    redirect '/greet'
+    erb :greet
   end
 end
