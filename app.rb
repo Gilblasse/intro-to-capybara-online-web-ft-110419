@@ -6,6 +6,7 @@ class Application < Sinatra::Base
   end
   
   post '/greet' do 
+    params
     redirect '/greet'
   end
   
